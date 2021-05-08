@@ -1,0 +1,7 @@
+.git
+.gitignore
+.dockerignore
+uwsgi.pid
+Dockerfile
+docker-compose.yml
+xops_qd

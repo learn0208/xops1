@@ -1,0 +1,28 @@
+version: '3.0'
+
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=qmzhl8MK3czo
+      - MYSQL_DATABASE=xops
+      - MYSQL_USER=xops
+      - MYSQL_PASSWORD=xops1234
+    volumes:
+      - ./my.cnf:/etc/my.cnf
+
+  xops:
+    image: xops
+    build:
+      context: ../
+      dockerfile: Dockerfile
+    environment:
+      - ENV_DB_HOST=mysql
+      - ENV_DB_PORT=3306
+      - ENV_DB_NAME=xops
+      - ENV_DB_USER=xops
+      - ENV_DB_PASS=xops1234
+    depends_on:
+      - mysql

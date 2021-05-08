@@ -1,0 +1,27 @@
+[
+    {
+        "model": "rbac.userprofile",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$120000$Gpv4PG8evyfw$kJ2vRpTnyHYsi1H+OUtk3It/ujFWunAPP9dYK3Z/eds=",
+            "last_login": null,
+            "is_superuser": true,
+            "is_active": true,
+            "username": "liu.jun",
+            "first_name": "",
+            "last_name": "",
+            "is_staff": true,
+            "date_joined": "2021-01-01T00:00:00.000",
+            "name": "刘军",
+            "mobile": "17788888888",
+            "email": "36291161@qq.com",
+            "image": "image/default.png",
+            "department": null,
+            "position": null,
+            "superior": null,
+            "groups": [],
+            "user_permissions": [],
+            "roles": [1]
+        }
+    }
+]

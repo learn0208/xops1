@@ -1,0 +1,22 @@
+migrations/
+__pycache__/
+*.pyc
+db.sqlite3
+
+# vue
+.DS_Store
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+tests/**/coverage/
+
+# .idea
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
